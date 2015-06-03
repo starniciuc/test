@@ -3,13 +3,13 @@ footer{
   
   .social-links{
     padding: 0;
-    margin: 0;
+    margin: 20px 10px;
     text-align: center;
 
     li{
-      margin: 20px 10px;
       display: inline-block;
-
+      margin: 0 10px;
+      
       a{
         color: #a1a1a1;
         font-family: "HoeflerTextItalic", sans-serif;
@@ -37,5 +37,13 @@ footer{
     .footer-logo{
       margin: 20px 0 15px;
     }
+  }
+  
+  .line-25{
+    margin: 10px auto;
+    width: 24%;
+    margin-bottom: 20px;
+    height: 1px;
+    background-color: #eeeeee;
   }
 }

@@ -24,7 +24,7 @@ main {
           .text-row{
             text-align: center;
             position: absolute;
-            
+
             top: 50%;
             left: 50%;
             @include transform(translate(-50%, -50%));
@@ -68,25 +68,123 @@ main {
       }
     }
   }
-  
+
   .tabs-block{
-    
+
     .tab-tour{
       width: 32%;
-      margin: 20px 6px;
+      margin: 30px 6px;
       position: relative;
       float: left;
-      
+
       img{
         width: 100%;
       }
-      
-      .offert-block{
+
+      .link-to-tour{
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
+        height: 100%;
+
+        .offert-block{
+          text-align: center;
+          display: table;
+          width: 100%;
+          height: 100%;
+          
+          .inner-block{
+            display: table-cell;
+            vertical-align: middle;
+            
+            p{
+              color: #FFFFFF;
+              font-size: 14px;
+              text-transform: uppercase;
+              font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+              font-weight: bold;
+              margin: 0;
+              padding: 0;
+              letter-spacing: 2px;
+              line-height: 100%;
+              
+              &.bottom-title{
+                font-size: 12px;
+                position: absolute;
+                bottom: 40px;
+                width: 100%;
+              }
+            }
+
+            h3{
+              font-family: "ProximaNovaBlack", Helvetica, Arial, sans-serif;
+              color: #FFFFFF;
+              font-size: 30px;
+              text-transform: uppercase;
+              padding: 0 30px;
+              margin: 0;
+              line-height: 100%;
+              
+              &.tour-plane{
+                margin: 12px 0 18px;
+                padding: 0;
+
+                span{
+                  vertical-align: middle;
+                }
+
+                i{
+                  margin: 0 20px;
+                }
+              }
+            }
+
+            img{
+              &.barcode{
+                max-width: 144px;
+                margin-top: 25px;
+              }
+            }
+          }
+        }
+
+        .hidden-read-more{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 3;
+          @include opacity(0);
+          background-color: rgba(65,64,66, 0.7);
+          @include transition(opacity 0.4s ease-in-out);
+
+          .read-more{
+            color: #FFFFFF;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            position: absolute;
+            bottom: 25px;
+            text-decoration: underline;
+          }
+        }
+
+        &:hover{
+
+          .hidden-read-more{
+            @include opacity(1);
+          }
+        }
       }
     }
   }
-  
+
 }
