@@ -12,9 +12,33 @@
     <div class="wrapper">
       <!-- header block-->
       <header>
-        
+        <div class="row">
+          <nav class="top-bar top-menu" role="navigation">
+            <ul class="title-area">
+              <li class="name">
+                <a href="#"><img src="img/logo.png" alt="logo" class="logo-top"></a>
+              </li>
+              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <ul class="top-language-menu">
+              <li><a href="#"><i class="icon search"></i></a></li>
+              <li><a href="#">ENG</a> <span class="divider">/</span> <a href="#">ESP</a></li>
+            </ul>
+            <section class="top-bar-section list-menu">
+              <!-- Left Nav Section -->
+              <ul class="right">
+                <li><a href="#">About</a></li>
+                <li><a href="#">the Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="icon bars"></i></a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
       </header>
-      
+
       <!-- main block-->
       <main>
         <!-- home fullscreen slider block-->
@@ -22,6 +46,15 @@
           <ul class="slides-container">
             <li>
               <img src="img/slider/nessak.jpg" alt="slide 1" />
+              <div class="text-content">
+                <div class="text-row">
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <h1>Breathing in barcelona</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
               <img src="img/slider/nessak.jpg" alt="slide 1" />
@@ -31,29 +64,51 @@
             </li>
           </ul>
         </section>
-        
+
         <section class="row">
-          <div class="large-4 columns">
-            <img src="img/tour1.jpg" alt="tour">
-          </div>
-          <div class="large-4 columns">
-            <img src="img/tour2.jpg" alt="tour">
-          </div>
-          <div class="large-4 columns">
-            <img src="img/tour2.jpg" alt="tour">
+          <div class="tabs-block large-12 columns">
+            <div class="tab-tour">
+              <img src="img/tour1.jpg" alt="tour">
+              <div class="offert-block">
+                <span>current trip:</span>
+              </div>
+            </div>
+            <div class="tab-tour">
+              <img src="img/tour2.jpg" alt="tour">
+            </div>
+            <div class="tab-tour">
+              <img src="img/tour3.jpg" alt="tour">
+            </div>
           </div>
         </section>
       </main>
-      
+
       <!-- footer block-->
       <footer>
-        
+        <div class="row">
+          <div class="large-12 columns">
+            <ul class="social-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Pinterest</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Tumblr</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns rights">
+            <p>Mr. John Smith 1234 Main Street, Anytown, USA 123456</p>
+            <p><span class="copy-icon">&copy;</span> 2014 Company Name LLC. ALL RIGHTS RESERVED.</p>
+            <a href="#"><img src="img/footer-logo.png" alt="SIWE Metu" class="footer-logo"></a>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/jquery.superslides.min.js" type="text/javascript"></script>
-    
+
     <script src="js/main.js"></script>
   </body>
 </html>

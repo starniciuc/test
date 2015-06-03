@@ -1,10 +1,89 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Jun 2, 2015, 11:11:17 PM
-    Author     : Mihai
-*/
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 143px;
+  width: 100%;
+  z-index: 3;
 
+  .top-menu{
+    background: none;
+    height: auto;
+    line-height: 100%;
+    padding: 30px 0;
+
+    .name{
+      line-height: 100%;
+      height: auto;
+    }
+
+    .logo-top{
+      width: 99px;
+      height: auto;
+    }
+
+    .top-bar-section.list-menu{
+      ul{
+        li{
+          background: none;
+          margin-right: 35px;
+          margin-left: 35px;
+
+          &:last-child{
+            margin-right: 0;
+            margin-left: 5px;
+          }
+
+          a{
+            background: none;
+            padding: 0;
+            margin: 0;
+            color: #FFFFFF;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "ProximaNova", sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 42px;
+
+            &:hover{
+              background: none;
+            }
+          }
+        }
+      }
+    }
+
+    .top-language-menu{
+      padding: 0;
+      list-style: none;
+      text-align: right;
+
+      li{
+        display: inline-block;
+        margin-right: 30px;
+        vertical-align: middle;
+        
+        &:last-child{
+          margin-right: 0;
+        }
+
+        a{
+          font-size: 11px;
+          font-family: "ProximaNova", sans-serif;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          line-height: 20px;
+        }
+        
+        span.divider{
+          font-size: 20px;
+          color: #FFFFFF;
+          vertical-align: middle;
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}

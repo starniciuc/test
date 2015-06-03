@@ -1,0 +1,17 @@
+.icon{
+  display: inline-block;
+  font-style: normal;
+  vertical-align: middle;
+  background: url("../img/icons.png") no-repeat 0 0;
+  
+  &.bars{
+    width: 16px;
+    height: 10px;
+  }
+  
+  &.search{
+    width: 13px;
+    height: 13px;
+    background-position: -17px 0;
+  }
+}
